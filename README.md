@@ -3,4 +3,4 @@
 
 ![](tracking_1.gif)
 
-![](tracking_12-min.gif)
+![](tracking_2.gif)
