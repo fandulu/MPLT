@@ -17,7 +17,7 @@ In this research, we develop a framework for multi-person localization and track
 
 ## Getting Started
 ### Installation
-The code was tested on Ubuntu 18.04, with Anaconda Python 3.6 and PyTorch v1.1.0. NVIDIA GPUs are needed for both training and testing. 
+The code was tested on Ubuntu 18.04, with Anaconda Python 3.6 and PyTorch v1.1.0.
 
 You also need to install openpifpaf by
 ```sh
