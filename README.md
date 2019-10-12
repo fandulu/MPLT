@@ -4,30 +4,35 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
   * [Installation](#installation)
+  * [Run code](#run-code)
 * [Demos](#demos)
-* [Dataset Download](#dataset)
+* [Dataset Download Link](#dataset-download-link)
 * [License](#license)
-* [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
+## About the Project
+In this research, we develop a framework for multi-person localization and tracking in a 3D panoramic coordinate by using panoramic RGB videos. It has not been approached before due to difficulties arising from the framework's complexity. To approach it, we simplify the target goal by dividing the entire framework into four basic modules as Pose Detection Module, Geometry Transformation Module, Appearance Re-identification Module and Tracking Module, and then seamlessly incorporating them together. To evaluate our framework and promote related studies, we also propose a panoramic video dataset with persons' 3D trajectories available.
 
+## Getting Started
+### Installation
+The code was tested on Ubuntu 18.04, with Anaconda Python 3.6 and PyTorch v1.1.0. NVIDIA GPUs are needed for both training and testing. 
 
-# Demos:
+You also need to install openpifpaf by
+```sh
+pip3 install openpifpaf
+```
+### Run code
+  TBA
+
+## Demos:
 ![](tracking_1.gif)
 ![](tracking_2.gif)
 
-# Dataset Download Link:
+## Dataset Download Link:
   TBA
  
-<!-- CONTACT -->
-## Contact
-Fan Yang - yang.fan.xv6@is.naist.jp	
-
-
 <!-- LICENSE -->
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
