@@ -16,7 +16,29 @@
 * [Acknowledgements](#acknowledgements)
 
 
+### Built With
+
+* []()
+* []()
+* []()
+
+
 # Demos on MPLT dataset:
 ![](tracking_1.gif)
 
 ![](tracking_2.gif)
+
+<!-- CONTACT -->
+## Contact
+Fan Yang - yang.fan.xv6@is.naist.jp	
+
+
+<!-- LICENSE -->
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [Tiny Person re-id](https://github.com/lulujianjie/person-reid-tiny-baseline)
+* [PifPaf](https://github.com/vita-epfl/openpifpaf)
+* [DeepSrot](https://github.com/vita-epfl/openpifpaf)
