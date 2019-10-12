@@ -1,4 +1,4 @@
-# Multi-person_panoramic_localization_tracking
+# Using panoramic videos for multi-person localization and tracking in a 3D panoramic coordinate
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -8,26 +8,21 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
+* [Demos](#demos)
+* [Dataset Download](#dataset)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
 
-### Built With
 
-* []()
-* []()
-* []()
-
-
-# Demos on MPLT dataset:
+# Demos:
 ![](tracking_1.gif)
-
 ![](tracking_2.gif)
 
+# Dataset Download Link:
+  TBA
+ 
 <!-- CONTACT -->
 ## Contact
 Fan Yang - yang.fan.xv6@is.naist.jp	
