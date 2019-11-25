@@ -19,9 +19,9 @@ In this research, we develop a framework for multi-person localization and track
 ### Installation
 The code was tested on Ubuntu 18.04, with Anaconda Python 3.6 and PyTorch v1.1.0.
 
-You also need to install openpifpaf by
+You may need to install requirements.txt by
 ```sh
-pip3 install openpifpaf
+pip3 install requirements.txt
 ```
 ### Run code
   TBA
