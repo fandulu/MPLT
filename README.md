@@ -12,8 +12,8 @@
 * [License](#license)
 * [Acknowledgements](#acknowledgements)
 
-## About the Project
-In this research, we develop a framework for multi-person localization and tracking in a 3D panoramic coordinate by using panoramic RGB videos. It has not been approached before due to difficulties arising from the framework's complexity. To approach it, we simplify the target goal by dividing the entire framework into four basic modules as Pose Detection Module, Geometry Transformation Module, Appearance Re-identification Module and Tracking Module, and then seamlessly incorporating them together. To evaluate our framework and promote related studies, we also propose a panoramic video dataset with persons' 3D trajectories available.
+## About the Project ([ArXiv](https://arxiv.org/pdf/1911.10535.pdf))
+3D panoramic multi-person localization and tracking are prominent in many applications, however, conventional methods using LiDAR equipment could be economically expensive and also computationally inefficient due to the processing of point cloud data. In this work, we propose an effective and efficient approach at a low cost. First, we obtain panoramic videos with four normal cameras. Then, we transform human locations from a 2D panoramic image coordinate to a 3D panoramic camera coordinate using camera geometry and human bio-metric property (i.e., height). Finally, we generate 3D tracklets by associating human appearance and 3D trajectory. We verify the effectiveness of our method on three datasets including a new one built by us, in terms of 3D single-view multi-person localization, 3D single-view multi-person tracking, and 3D panoramic multi-person localization and tracking. 
 
 ## Getting Started
 ### Installation
@@ -36,6 +36,16 @@ pip3 install requirements.txt
 <!-- LICENSE -->
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
+
+## Citation
+```
+@inproceedings{yang2020mplt,
+  title={Using panoramic videos for multi-person localization and tracking in a 3D panoramic coordinate},
+  author={Fan Yang, Feiran Li, Yang Wu, Sakriani Sakti, and Satoshi Nakamura},
+  booktitle={International Conference on Acoustics, Speech, and Signal Processing},
+  year={2020}
+}
+```
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
