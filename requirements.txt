@@ -1,3 +1,8 @@
 torch
-opencv-python
 openpifpaf
+opencv-python
+tqdm
+pandas
+Pillow
+glob3
+
