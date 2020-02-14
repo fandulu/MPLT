@@ -4,11 +4,11 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+* [Dataset Download Link](#dataset-download-link)
 * [Getting Started](#getting-started)
   * [Installation](#installation)
   * [Run code](#run-code)
 * [Demos](#demos)
-* [Dataset Download Link](#dataset-download-link)
 * [License](#license)
 * [Acknowledgements](#acknowledgements)
 
