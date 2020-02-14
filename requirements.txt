@@ -1,4 +1,3 @@
-torch
 openpifpaf
 opencv-python
 tqdm
