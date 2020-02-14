@@ -24,11 +24,16 @@ You may need to install requirements.txt by
 pip3 install requirements.txt
 ```
 ### Run code
-  TBA
+1. Download data and put them to /data folder
+2. Download [model weight](https://drive.google.com/open?id=1AGo6qc1xOiC-DnY0K1Xx824uB9F3Mwzp) and put it to /reid folder
+3. Run pano_detector.ipynb to generate and save 2D detection boxes.
+4. Run tracking.ipynb to generate and save tracking links.
+5. Run generate_video.ipynb to generate visulation videos.
+
 
 ## Demos:
-![](tracking_1.gif)
-![](tracking_2.gif)
+![](pictures/tracking_1.gif)
+![](pictures/tracking_2.gif)
 
 ## Dataset Download Link:
   [Download](https://mega.nz/#!BtYx1ACa!B24sxHQ8hC7t1hVDTJJ4RSBwZDtHiXxoazVpjVSbsro)
