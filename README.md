@@ -53,7 +53,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ```
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+## Acknowledgements (parts of our code are heavily borrowed from)
 * [Tiny Person re-id](https://github.com/lulujianjie/person-reid-tiny-baseline)
 * [PifPaf](https://github.com/vita-epfl/openpifpaf)
 * [DeepSort](https://github.com/vita-epfl/openpifpaf)
