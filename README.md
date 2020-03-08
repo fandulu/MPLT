@@ -14,7 +14,7 @@
 
 ## About the Project ([ArXiv](https://arxiv.org/pdf/1911.10535.pdf))
 3D panoramic multi-person localization and tracking are prominent in many applications, however, conventional methods using LiDAR equipment could be economically expensive and also computationally inefficient due to the processing of point cloud data. In this work, we propose an effective and efficient approach at a low cost. First, we obtain panoramic videos with four normal cameras. Then, we transform human locations from a 2D panoramic image coordinate to a 3D panoramic camera coordinate using camera geometry and human bio-metric property (i.e., height). Finally, we generate 3D tracklets by associating human appearance and 3D trajectory. We verify the effectiveness of our method on three datasets including a new one built by us, in terms of 3D single-view multi-person localization, 3D single-view multi-person tracking, and 3D panoramic multi-person localization and tracking. 
-![](pictures/framework.pdf)
+![](pictures/framework.png)
 
 
 ## Dataset Download Link:
