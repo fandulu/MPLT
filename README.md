@@ -41,7 +41,7 @@ pip3 install requirements.txt
 
 <!-- LICENSE -->
 ## License
-Distributed under the MIT License. See `LICENSE` for more information.
+The code is distributed under the MIT License. See `LICENSE` for more information.
 
 ## Citation
 ```
