@@ -32,7 +32,7 @@ pip3 install requirements.txt
 1. Download data and put them to /data folder
 2. Download [model weight](https://drive.google.com/open?id=1AGo6qc1xOiC-DnY0K1Xx824uB9F3Mwzp) and put it to /reid folder
 3. Run pano_detector.ipynb to generate and save 2D detection boxes.
-4. Run tracking.ipynb to generate and save tracking links.
+4. Run tracking.ipynb to generate and save tracking links (we will update the tracker from DeepSort to ours later).
 5. Run generate_video.ipynb to generate visulation videos.
 
 ## Demos:
