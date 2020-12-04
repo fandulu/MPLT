@@ -3,6 +3,7 @@ import math
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, PathPatch
 import cv2
+import copy
 
 
 def get_image(video_path, frame):
@@ -91,7 +92,6 @@ def plot_pano(pano_locations, img_front, img_left, img_right, img_back):
     plt.show()
 
     
-    
 def plot_pano_tracking(frame, pano_locations, pano_bridge, Images):
     
     colors = ['#C0C0C0','#000000','#FF0000','#800000','#FFFF00','#808000','#00FF00','#008000','#00FFFF','#008080',
@@ -131,6 +131,8 @@ def plot_pano_tracking(frame, pano_locations, pano_bridge, Images):
 
     #draw side-view
     _,W,_ = Images['back'].shape
+    img_back_flip = copy.deepcopy(Images['back'][:,::-1,:])
+    
     for i in range(len(pano_bridge)):
         font=cv2.FONT_HERSHEY_SIMPLEX
         if pano_bridge[i][0]=='front':
@@ -139,17 +141,18 @@ def plot_pano_tracking(frame, pano_locations, pano_bridge, Images):
             cv2.putText(Images['right'], str(int(pano_bridge[i][2])), (int(pano_bridge[i][1][0]+(pano_bridge[i][1][2]-pano_bridge[i][1][0])/4), int(pano_bridge[i][1][1])), font, 2, (255, 0, 0), 4, cv2.LINE_AA)
         if pano_bridge[i][0]=='back':
             #cv2.putText(Images['back'], str(int(pano_bridge[i][2])), (int(pano_bridge[i][1][0]+(pano_bridge[i][1][2]-pano_bridge[i][1][0])/4), int(pano_bridge[i][1][1])), font, 2, (255, 0, 0), 4, cv2.LINE_AA)
-            cv2.putText(Images['back'], str(int(pano_bridge[i][2])), (W-int(pano_bridge[i][1][2]+(pano_bridge[i][1][2]-pano_bridge[i][1][0])/4), int(pano_bridge[i][1][1])), font, 2, (255, 0, 0), 4, cv2.LINE_AA)
+            cv2.putText(img_back_flip, str(int(pano_bridge[i][2])), (W-int(pano_bridge[i][1][2]+(pano_bridge[i][1][2]-pano_bridge[i][1][0])/4), int(pano_bridge[i][1][1])), font, 2, (255, 0, 0), 4, cv2.LINE_AA)
         if pano_bridge[i][0]=='left':
             cv2.putText(Images['left'], str(int(pano_bridge[i][2])), (int(pano_bridge[i][1][0]+(pano_bridge[i][1][2]-pano_bridge[i][1][0])/4), int(pano_bridge[i][1][1])), font, 2, (255, 0, 0), 4, cv2.LINE_AA)
 
     ax_front.imshow(Images['front'])
     ax_right.imshow(Images['right'])
-    ax_back.imshow(Images['back'])
+    ax_back.imshow(img_back_flip)
     ax_left.imshow(Images['left'])
 
     plt.savefig("outputs/%04d.png" % int(frame))
-    plt.show()
+    plt.show()    
+
     
 
 def extract_image_patches(image, boxes, corner=False):
